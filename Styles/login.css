@@ -1,0 +1,46 @@
+/* Colores: https://colorhunt.co/palette/eac696c8ae7d76582765451f */
+
+.cajita{
+    width: 20%;
+    z-index: 1000;
+    background-color: white;
+    opacity: 1;
+    margin-left: 200px;
+}
+
+.info{
+    z-index: 1000;
+    width: 500px;
+    height: 200px;
+}
+
+.info > h1{
+    color: black;
+}
+
+.info > h2{
+    color: #765827;
+}
+.imagen{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.imagen::before{
+   content: "";
+    background-image: url("../Imagenes/background-ropa.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 10%;
+}
+
+button{
+    color: #EAC696;
+}
