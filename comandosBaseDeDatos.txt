@@ -1,0 +1,21 @@
+create table Clientes(
+    Id_Cliente varchar(30) primary key,
+    Nombre_Cliente varchar(30)
+);
+
+create table Empleados(
+	Id_Empleado varchar(30) primary key,
+	Nomb_Empleado varchar(30),
+	Usuario varchar(30),
+	Contrasena varchar(30)
+);
+
+create table Encuestas(
+	Id_Cliente varchar(30),
+	Satisfaccion varchar(15),
+    	PRIMARY KEY (Id_Cliente, Satisfaccion)
+);
+
+ALTER TABLE Encuestas --TABLA DE RELACION PARA CAMPO MULTIVALORADO 
+ADD FOREIGN KEY(Id_Cliente)
+REFERENCES Clientes(Id_Cliente); --TABLA A QUIEN PERTENECE EL CAMPO
