@@ -1,0 +1,12 @@
+.fotos{
+    width: 900px;
+    height: 700px;
+}
+
+body{
+    background-color: #F8F0E5;
+}
+
+footer > p{
+    color: white;
+}
