@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="css/home.css">
     <!-- https://icons.getbootstrap.com/ -->
   </head>
-<body >
+<body>
 
-<div class="container mt-3" background-color="#C8AE7D">
+<div class="container mt-3">
   <div class="row justify-content-md-center">
     <div class="col-md-12">
       <h1 class="text-center mt-3">Registro de Empleados</h1>
-        <a href="login.html"><i class="bi bi-house"></i></a>
+        <a href="login.html "><i class="bi bi-house"></i></a>
         <hr class="mb-3">
     </div>
     <div class="col-md-4 mb-3">
@@ -95,7 +95,7 @@
                     <a href="formEditarC.php?id_cliente=<?php echo $dataEmpleados['id_cliente']; ?>" class="btn btn-info mb-2"   title="Actualizar Empleado <?php echo $dataEmpleados['Nombre']; ?>">
                     <i class="bi bi-arrow-clockwise"></i> Actualizar</a>
                     <a href="actionC.php?id_cliente=<?php echo $dataEmpleados['id_cliente']; ?>&metodos=3&namePhoto=<?php echo $dataEmpleados['Foto']; ?>" class="btn btn-danger mb-2" title="Borrar Empleado <?php echo $dataEmpleados['Nombre']; ?>">
-                    <i class="bi bi-trash"></i> Borrar</a>
+                    <i class=""></i> Deshabilitar</a>
                   </td>
                 </tr>
                 
