@@ -27,13 +27,15 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+
 }
 
 .imagen::before{
+
    content: "";
     background-image: url("../Imagenes/background-ropa.jpg");
     background-size: cover;
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -43,4 +45,10 @@
 
 button{
     color: #EAC696;
+}
+
+.barra a {
+
+z-index: 999;
+
 }
