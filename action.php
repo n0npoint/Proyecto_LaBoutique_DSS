@@ -150,7 +150,7 @@ if($metodoAction == 3){
         unlink($fotoEmpleados);
     }
     
-    $msj ="Empleados Borrado correctamente.";
+    $msj ="Empleados Deshabilitado correctamente.";
     header("Location:Empleados.php?deletEmpleados=1&mensaje=".$msj);
  
 }

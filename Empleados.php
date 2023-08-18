@@ -10,17 +10,24 @@
     <link rel="stylesheet" href="css/home.css">
     <!-- https://icons.getbootstrap.com/ -->
   </head>
-<body >
-
-<div class="container mt-3" background-color="#C8AE7D">
-  <div class="row justify-content-md-center">
+<body > <style="background-color:#EAC696;">
+<style>
+.table {
+    background: linear-gradient(to bottom right, #96B6C5, #EEE0C9);
+    }
+ .form{
+  background: linear-gradient(to bottom right, #00C4FF, #FFE7A0);
+ }
+  </style>
+<div class="container mt-3">
+  <div class="row justify-content-md-center" >
     <div class="col-md-12">
-      <h1 class="text-center mt-3">Registro de Empleados</h1>
+      <h1 class="text-center mt-3" >Registro de Empleados</h1>
         <a href="login.html"><i class="bi bi-house"></i></a>
         <hr class="mb-3">
     </div>
-    <div class="col-md-4 mb-3">
-      <h3 class="text-center">Datos de Empleado</h3>
+    <div class="col-md-4 mb-3" > <style="background-color:Green;" >
+      <h3 class="text-center"  >Datos de Empleado</h3>
       <form method="POST" action="action.php" enctype="multipart/form-data">
         <input type="text" name="metodo" value="1" hidden>
       <div class="mb-3">
@@ -89,12 +96,13 @@
     $totalEmpleados = mysqli_num_rows($queryEmpleados);
 
     ?>
-    <div class="col-md-8">
-    <h3 class="text-center">Lista de Empleados <?php echo '(' . $totalEmpleados . ')'; ?></h3>
+    
+    <div class="col-md-8" >
+    <h3 class="text-center">Lista de Empleados <?php echo '(' . $totalEmpleados . ')'; ?></h3> <style="background-color:BLACK ;">
       <div class="row">
         <div class="col-md-12 p-2">
           <div class="table-responsive">
-            <table class="table table-bordered table-striped table-hover">
+            <table class="table table-bordered table-striped table-hover"> 
               <thead>
                 <tr>
                   <th>ID</th>
@@ -132,7 +140,7 @@
                     <a href="formEditar.php?Id_Emp=<?php echo $dataEmpleados['Id_Emp']; ?>" class="btn btn-info mb-2"   title="Actualizar Empleado <?php echo $dataEmpleados['Nombre']; ?>">
                     <i class="bi bi-arrow-clockwise"></i> Actualizar</a>
                     <a href="action.php?Id_Emp=<?php echo $dataEmpleados['Id_Emp']; ?>&metodo=3&namePhoto=<?php echo $dataEmpleados['foto']; ?>" class="btn btn-danger mb-2" title="Borrar Empleado <?php echo $dataEmpleados['Nombre']; ?>">
-                    <i class="bi bi-trash"></i> Borrar</a>
+                    <i class=""></i> Deshabilitar</a>
                   </td>
                 </tr>
                 
